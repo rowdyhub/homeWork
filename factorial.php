@@ -1,12 +1,10 @@
 <?php 
-function factorial($a, $b=1){
-    
-        $a = (int)$a;
+function factorial(int $a, $b=1): int{
         for($i=1; $i<=$a; $i++){
             $b*=$i;
         }
         return $b;
 }
 
-echo factorial(4);
+echo factorial(12);
 ?>
